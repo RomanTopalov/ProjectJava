@@ -1,0 +1,631 @@
+ @import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+
+.outputArticle{
+	background: white;
+	width:80%;
+	height:auto;
+	position:relative;
+	float: left;
+	margin-left:3%;
+	margin-top:3%;
+	border-radius:25px  25px 25px 25px ;
+	
+	
+}
+.title{
+background: white;
+	position:relative;
+	border-radius:25px  25px 25px 25px ;
+	margin-top:10px;
+		font-family: 'Pacifico', cursive;
+	font-size: 15px;
+	color: #82BF56;
+	text-align: center;
+	border-bottom:1px solid #82BF56;
+}
+
+.dateOfCreate{
+	background: white;
+	position:relative;
+	border-radius:25px  25px 25px 25px ;
+	margin-top:10px;
+		font-family: 'Pacifico', cursive;
+	font-size: 15px;
+	color: #82BF56;
+	text-align: center;
+	border-bottom:1px solid #82BF56;
+}
+.text1{
+	background: white;
+	position:relative;
+	border-radius:25px  25px 25px 25px ;
+	width:90%;
+	height:auto;
+	color: #82BF56;
+		font-family: 'Pacifico', cursive;
+	font-size: 15px;
+	margin-top:10px;
+	text-align: center;
+	margin-left:5%;
+	border-bottom:1px solid #82BF56;
+	
+	
+}
+
+
+
+
+
+
+.article{
+	margin:10px;
+	color: #82BF56;
+}
+.text_data{
+/* 	 overflow: scroll; */
+	 height: auto;
+	
+}
+.form {
+	margin-top:100px;
+  position: relative;
+    
+  top:50px;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding:  20px 45px 45px 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #43A047;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+  
+}
+.form .register-form {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
+body {
+ 
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;      
+} 
+
+
+/* @import url(http://weloveiconfonts.com/api/?family=entypo|fontawesome);
+	entypo
+	[class*="entypo-"]:before {
+	  font-family: 'entypo', sans-serif;
+	}
+	fontawesome
+	[class*="fontawesome-"]:before {
+	  font-family: 'FontAwesome', sans-serif;
+	}
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+* {
+	
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+} This is used to fix an specific width even when you add padding
+
+h1 {
+	font-family: sans-serif;
+	font-size: 27px;
+	font-weight: 900;
+	color: #82BF56;
+	margin: 0 0 10px 0;
+}
+h2 {
+	font-family: sans-serif;
+	font-size: 24px;
+	color: #82BF56;
+	margin: 0;
+	padding: 15px 0 0 20px;
+}
+a {
+	text-decoration: none;
+	color: #82BF56;
+}
+	a:hover {
+		text-decoration: underline;
+	}
+p {
+	font-size: 13px;
+	font-family: sans-serif;
+	color: #9eb2c0;
+	margin: 15px 0 5px 20px;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+textarea {
+	border-color: #dae4eb;
+	color: #dae4eb;
+}
+
+input[type=text]{
+	border: solid 1px #dae4eb;
+	margin: 20px 0 0 20px;
+	padding-left: 10px;	
+}
+	input[type=text]::-webkit-input-placeholder { WebKit browsers
+   		color: #dae4eb;
+   		font-weight: bold;
+	}
+	input[type=text]:-moz-placeholder { Mozilla Firefox 4 to 18
+    	color: #dae4eb;
+    	font-weight: bold;
+	}
+	input[type=text]::-moz-placeholder { Mozilla Firefox 19+
+   		color: #dae4eb;
+   		font-weight: bold;
+	}
+	input[type=text]:-ms-input-placeholder { Internet Explorer 10+
+    	color: #dae4eb;
+    	font-weight: bold;
+	}
+
+input[type=checkbox] {
+	display: none;
+}
+	input[type=checkbox] + label {
+		cursor: pointer;
+		position: relative;
+	}
+	input[type=checkbox] + label:before {
+		border: 1px solid #dae4eb;
+		color: #ffffff;
+		font-family: FontAwesome;
+		font-size: 22px;
+		content: "\f00c";
+		height: 30px;
+		line-height: 30px;
+		width: 30px;
+		text-align: center;
+	}
+	input[type=checkbox]:checked + label:before {
+		color: #a8bd44;
+		content: "\f00c";
+	}
+
+.container {
+	background-color: #FFFFFF;
+}
+
+.bar {
+	background-color: #FFFFFF;
+	text-align: center;
+}
+	.bar a {
+		color: #c1cfd9;
+		-webkit-transition: background .2s ease-out;
+		-moz-transition: background .2s ease-out;
+		-o-transition: background .2s ease-out;
+		-ms-transition: background .2s ease-out;
+		transition: background .2s ease-out;
+	}
+		.bar a:hover {
+			text-decoration: none;
+			background: #242B33;
+		}
+	.title-bar {
+		height: 55px;
+		text-align: left;
+	}
+		.more-bar {
+			background-color: #c1cfd9;
+			position: relative; To make absolute position in .scroll (Check "Recent Posts" and "Categories")
+		}
+.btn {
+	display: inline-block;
+	line-height: 35px;
+	font-size: 15px;
+	font-family: sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	background: #f97e76;
+	color: #ffffff;
+	text-align: center;
+	-webkit-transition: background .5s ease-out;
+	-moz-transition: background .5s ease-out;
+	-o-transition: background .5s ease-out;
+	-ms-transition: background .5s ease-out;
+	transition: background .5s ease-out;
+}
+	.btn:hover {
+		text-decoration: none;
+		background: #F75145;
+	}
+.lupa {
+	font-size: 20px;
+	color: #c1cfd9;
+	position: absolute;
+}
+
+#main-container {
+	width: 100%;
+	height: auto;
+	background-color:  #FFFFFF;;
+	margin: 0 auto;
+	padding: 80px;
+}
+	#left-container {
+		width: 100%;
+		float: left;
+	}
+		#newPost {
+			height: auto;
+			
+			box-shadow: rgba(0,0,0,0.2) 10px 10px 10px;
+		}
+			.side {
+				width: 90px;
+				height: 675px;
+				float: left;	
+			}
+				.side a {
+					display: block;
+					line-height: 90px;
+					font-size: 22px;
+				}					
+					#document {
+						background: #ffffff;
+						color: #2e3641;
+					}
+						#document:hover {
+							text-decoration: none;
+						}
+				
+			.newPostContent {
+				width: 480px;
+				height:auto;
+				border:1px solid #82BF56;
+				float: left;
+				padding-left: 40px;
+				padding-top: 70px;
+			}
+				#post-title {
+					width: 400px;
+					height: 45px;
+					margin:0 0 20px 0;
+					padding-left: 15px;
+					font-size: 22px;
+					font-weight: bold;
+				}					
+				.format-bar {
+					height: 45px;
+					width: 400px;
+				}
+				.format-bar a {
+					font-size: 12px;
+					display: block;
+					float: left;
+					width: 45px;
+					line-height: 45px;
+					border-right: solid 1px #3a414d;				
+				}
+				.post-body {
+					width: 400px;
+					height: 290px;
+					color: black;
+					margin: 0 0 20px 0;
+				}
+				.newPostContent .btn {
+					width: 120px;
+					line-height: 45px;
+					background-color: #82BF56;
+				}
+					.disabled {
+						background: #c1cfd9;
+					}
+						.disabled:hover {
+							background: #c1cfd9;
+							cursor: default;
+
+						}
+		
+		
+
+	#middle-container {
+		width: 100%;
+		float: left;
+		margin: 0px 60px;
+	}
+		#relatedPosts {
+			height: auto;
+			box-shadow: rgba(0,0,0,0.2) 10px 10px 10px;
+		}
+			.rpost {
+				margin-bottom: 30px;
+				width: 310px;
+				display: inline-block;
+			}
+				.rpost a:first-child {
+					color: #f97e76;
+					font-size: 16px;
+					font-weight: bold;					
+					line-height: 150%;
+				}
+				.rpost-checkbox + label:before {
+					position: absolute;
+					left: 65px;
+					top: -45px;
+				}
+		#tags {
+			height: 165px;
+			margin-top: 60px;
+			box-shadow: rgba(0,0,0,0.2) 10px 10px 10px;
+		}
+			#tags input[type=text] {
+				width: 300px;
+				height: 35px;
+			}
+			#tags .btn {
+				width: 80px;
+				margin: 20px 0 0 5px;
+			}
+			#tags p {
+				font-size: 11px;
+				margin-top: 8px;
+			}
+		
+
+	#right-container {
+		width: 320px;
+		float: left;
+	}
+		#calendar {
+			height: 330px;
+			box-shadow: rgba(0,0,0,0.2) 10px 10px 10px;
+		}
+			.calendar-bar a {
+				display: block;
+				float: left;
+				line-height: 55px;
+				border-right: solid 2px #3a414d;
+				border-bottom: solid 2px #3a414d;
+				text-align: center;
+			}
+				.arrow {
+					width: 55px;
+				}
+				.month {
+					width: 210px;					
+				}				
+			.calendar-bar h2 {
+				padding: 0;
+			}
+			.calendar-container {
+				width: 320px;
+				height: 275px;
+				background: #f97e76;				
+			}
+				.daysWeek {
+					background: #2e3641;
+					width: 320px;
+					height: 40px;						
+				}
+					.daysWeek li {
+						color: #ffffff;
+						display: inline-block;
+						padding: 10px 0;
+						width: 40px;
+						text-align: center;
+						padding-left: 15px;
+					}
+				.calendar {
+					text-align: center;
+					width: 310px;
+					margin-left: 8px;							
+				}					
+					.days a {
+						color: #ffffff;
+						font-size: 24px;
+					}
+					.days td {
+						padding: 7px 0px; 
+					}					
+					.daysOut a {
+						color: #fbb2ad;
+					}
+					.today {
+						background: #2e3641;
+					}
+
+		#recentPosts {
+			margin-top: 30px;
+			box-shadow: rgba(0,0,0,0.2) 10px 10px 10px;			
+		}
+			.scroll {
+				display: block;
+				line-height: 55px;
+				width: 55px;
+				position: absolute; .more-bar is relative
+				top: 0;
+				right: 0;
+				text-align: center;
+				background: #9eb2c0;
+				color: #ffffff;
+				-webkit-transition: background .2s;
+				-moz-transition: background .2s;
+				-o-transition: background .2s;
+				-ms-transition: background .2s;
+				transition: background .2s;
+			}
+				.scroll:hover {
+					text-decoration: none;
+					background: #90A6B6;
+				}
+		#categories {
+			height: 305px;
+			margin-top: 10px;
+			box-shadow: rgba(0,0,0,0.2) 10px 10px 10px;
+		}
+			#categories input[type=text] {
+				width: 280px;
+				height: 35px;
+				font-size: 18px;
+				font-weight: bold;
+			}
+			#categories label {
+				color: #a4b7c4;
+				font-size: 14px;
+				font-family: sans-serif;				
+			}
+			.categories-checkbox + label:before {
+				display: inline-block;
+				margin: 10px 10px 0 20px;
+			}
+			#categories .btn {
+				width: 80px;				
+			}
+				.save {
+					float: left;
+					margin: 15px 0 0 20px;
+					background: #a8bd44;
+					-webkit-transition: background .5s ease-out;
+					-moz-transition: background .5s ease-out;
+					-o-transition: background .5s ease-out;
+					-ms-transition: background .5s ease-out;
+					transition: background .5s ease-out;
+				}
+					.save:hover {
+						background: #97AA3C;
+					}
+				.delete {
+					float: right;
+					margin: 15px 20px 0 0;
+				}
+		#moreOptions {
+			height: 250px;
+			margin-top: 60px;
+			box-shadow: rgba(0,0,0,0.2) 10px 10px 10px;
+		}
+			.moreOptions-bar a{
+				display: inline-block;
+				float: left;
+				line-height: 55px;
+				width: 106.66666666667px;
+				text-align: center;				
+				font-weight: bold;
+				font-size: 16px;
+			}
+				.popular {
+					background: #ffffff;
+					color: #c5d2dc;
+				}
+					.popular:hover {
+						text-decoration: none;
+					}
+				.comments-recent {
+					background: #c5d2dc;
+					color: #ffffff;
+					-webkit-transition: background .2s;
+					-moz-transition: background .2s;
+					-o-transition: background .2s;
+					-ms-transition: background .2s;
+					transition: background .2s;
+
+				}
+					.comments-recent:hover {
+						text-decoration: none;
+						background: #9eb2c0;
+					}	
+			.popular {
+				float: left;
+			}
+				.profile-img {
+					width: 55px;
+					height: 55px;
+					background: #786665;
+					float: left;
+					margin: 15px 0 0 20px;
+				}
+				.popular p {
+					float: left;
+					margin-left: 15px;
+				}
+					.popular a:first-child {
+						font-size: 14px;
+						color: #f97e76;
+						font-weight: 900;
+						line-height: 200%;
+					}
+ */
